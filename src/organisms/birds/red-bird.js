@@ -3,7 +3,8 @@ import { Bird } from '../../molecules/bird';
 class RedBird extends Bird {
     constructor(x, y, r) {
         super(x, y, r);
-        this.body.render.sprite.texture = './lemon.png'; // Use lemon.png as texture
+        // Keeping the sprite texture as it was originally (before using lemon.png)
+        this.body.render.sprite.texture = 'https://raw.githubusercontent.com/yumin-jung/Angry-Birds/main/data/birds/red.png';
         this.body.render.sprite.xScale = 0.4;
         this.body.render.sprite.yScale = 0.4;
     }
