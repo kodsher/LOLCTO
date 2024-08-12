@@ -3,8 +3,8 @@ import { Bird } from '../../molecules/bird';
 class RedBird extends Bird {
     constructor(x, y, r) {
         super(x, y, r);
-        // Updated to use the lemon.png texture with correct dimensions
-        this.body.render.sprite.texture = './lemon.png'; // Set to local lemon.png
+        // Using the raw GitHub URL for the lemon image
+        this.body.render.sprite.texture = 'https://raw.githubusercontent.com/kodsher/LOLCTO/main/src/organisms/birds/lemon.png';
         this.body.render.sprite.xScale = 0.4;
         this.body.render.sprite.yScale = 0.4;
     }
