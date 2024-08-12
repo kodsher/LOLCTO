@@ -1,10 +1,9 @@
 import { Body } from '../atoms/body';
-import Matter from 'matter-js';
 
 class Bird extends Body {
-    constructor(x, y, r) {
+    constructor(x, y, r, MatterBodies) {
         super();
-        this.body = Matter.Bodies.circle(x, y, r, {
+        this.body = MatterBodies.circle(x, y, r, {
             density: 0.005,
             render: {
                 sprite: {
