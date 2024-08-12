@@ -1,4 +1,5 @@
 import { Body } from '../atoms/body';
+import Matter from 'matter-js';
 
 class Bird extends Body {
     constructor(x, y, r) {
